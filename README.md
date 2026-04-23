@@ -1,6 +1,6 @@
 # Intelbras-ISIC
 
-Intelbras ISIC Lite patchesto restore basic functionality:
+Intelbras ISIC Lite patches to restore basic functionality:
 
 - Re-enable local mode and disable local mode warning banner
 - Default to HIGH res video
