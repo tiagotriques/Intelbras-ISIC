@@ -1,0 +1,20 @@
+--- /home/triques/Intelbras/com.intelbras.isiclite/base/smali_classes3/com/intelbras/isiclite/modules/dashboard/DashboardActivity.smali
++++ /home/triques/com.intelbras.isiclite/app/smali_classes3/com/intelbras/isiclite/modules/dashboard/DashboardActivity.smali
+@@ -2683,7 +2683,7 @@
+ 
+     if-eqz v0, :cond_1
+ 
+-    invoke-direct {p0}, Lcom/intelbras/isiclite/modules/dashboard/DashboardActivity;->setupLocalModeBanner()V
++    nop
+ 
+     goto :goto_1
+ 
+@@ -7485,7 +7485,7 @@
+     invoke-direct {p0}, Lcom/intelbras/isiclite/modules/dashboard/DashboardActivity;->checkIfNeedToCheckAppUpdate()V
+ 
+     .line 206
+-    invoke-direct {p0}, Lcom/intelbras/isiclite/modules/dashboard/DashboardActivity;->checkIfNeedShowLocalModeDialog()V
++    nop
+ 
+     .line 207
+     sget-object v0, Lcom/intelbras/isiclite/utils/analytics/FirebaseHelper;->INSTANCE:Lcom/intelbras/isiclite/utils/analytics/FirebaseHelper;
