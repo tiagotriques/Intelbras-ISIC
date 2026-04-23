@@ -1,0 +1,28 @@
+--- /home/triques/Intelbras/com.intelbras.isiclite/base/smali_classes3/com/intelbras/isiclite/utils/dialogs/LoginSelectorDialog.smali
++++ /home/triques/com.intelbras.isiclite/app/smali_classes3/com/intelbras/isiclite/utils/dialogs/LoginSelectorDialog.smali
+@@ -430,25 +430,8 @@
+ 
+     check-cast v0, Landroid/view/View;
+ 
+-    sget-object v1, Lcom/intelbras/isiclite/devices/video/VideoManager;->INSTANCE:Lcom/intelbras/isiclite/devices/video/VideoManager;
+-
+-    invoke-virtual {v1}, Lcom/intelbras/isiclite/devices/video/VideoManager;->isEmpty()Z
+-
+-    move-result v1
+-
+-    xor-int/lit8 v1, v1, 0x1
+-
+-    if-eqz v1, :cond_1
+-
+     const/4 v1, 0x0
+ 
+-    goto :goto_0
+-
+-    :cond_1
+-    const/16 v1, 0x8
+-
+-    .line 86
+-    :goto_0
+     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+ 
+     return-void
