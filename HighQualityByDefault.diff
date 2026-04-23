@@ -1,0 +1,38 @@
+--- /home/triques/Intelbras/com.intelbras.isiclite/base/smali_classes3/com/intelbras/isiclite/devices/video/dahua/DahuaDevice.smali	2026-04-23 09:46:20.746959917 -0300
++++ /home/triques/com.intelbras.isiclite/app/smali_classes3/com/intelbras/isiclite/devices/video/dahua/DahuaDevice.smali	2026-04-23 10:04:25.638075659 -0300
+@@ -861,7 +861,7 @@
+     if-nez v4, :cond_3
+
+     :cond_2
+-    sget-object v4, Lcom/intelbras/isiclite/devices/video/dahua/enums/VideoQuality;->LOW:Lcom/intelbras/isiclite/devices/video/dahua/enums/VideoQuality;
++    sget-object v4, Lcom/intelbras/isiclite/devices/video/dahua/enums/VideoQuality;->HIGH:Lcom/intelbras/isiclite/devices/video/dahua/enums/VideoQuality;
+
+     :cond_3
+     move-object/from16 v16, v4
+@@ -8993,7 +8993,7 @@
+
+     .line 445
+     :cond_106
+-    sget-object v5, Lcom/intelbras/isiclite/devices/video/dahua/enums/VideoQuality;->LOW:Lcom/intelbras/isiclite/devices/video/dahua/enums/VideoQuality;
++    sget-object v5, Lcom/intelbras/isiclite/devices/video/dahua/enums/VideoQuality;->HIGH:Lcom/intelbras/isiclite/devices/video/dahua/enums/VideoQuality;
+
+     .line 444
+     :cond_107
+@@ -20066,17 +20066,9 @@
+
+     const/4 v1, 0x3
+
+-    if-ne p6, p7, :cond_7
+-
+-    if-nez p3, :cond_7
+-
+     const/4 p3, 0x2
+
+-    goto :goto_3
+-
+     :cond_7
+-    move p3, v1
+-
+     :cond_8
+     :goto_3
+     const-wide/16 p6, 0x0
